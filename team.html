@@ -81,24 +81,44 @@
             font-size: 56px;
             font-weight: 700;
             margin-bottom: 16px;
+            animation: myanimation 1s ease-in ;
         }
 
         .hero-content p {
             font-size: 18px;
             margin-bottom: 24px;
             max-width: 600px;
+            animation: myanimation 1s ease-in ;
         }
 
         .btn-green {
-            background-color: #28a745;
+            border: 2px solid green;
             color: white;
-            border: none;
+           background-color: transparent;
             border-radius: 25px;
             padding: 12px 30px;
             font-weight: 600;
             transition: all 0.3s ease;
+            animation: myanimation 1s ease-in ;
         }
 
+        @keyframes myanimation{
+            0%{
+                transform: translateY(-50%);
+                opacity: 0;
+                
+
+            }
+            100%{
+                transform: translateY(0);
+                opacity: 100%;
+            }
+
+        
+        
+         }
+
+      
         .btn-green:hover {
             background-color: #218838;
             transform: translateY(-2px);
@@ -125,7 +145,23 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             height: 100%;
+            animation: cardanimation 1s ease-in ;
         }
+
+
+          @keyframes cardanimation{
+            0%{
+                transform: translateY(-20%);
+                opacity: 0;
+                
+
+            }
+            100%{
+                transform: translateY(0);
+                opacity: 100%;
+            }
+        }   
+
 
         .team-card:hover {
             transform: translateY(-10px);
@@ -409,4 +445,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
-</html>
+</html> 
